@@ -17,21 +17,21 @@ public class MyList<T extends Number> {
         arrayList.add(elem);
     }
 
-    public Integer largest() {
-        Integer max = arrayList.get(0).intValue();
+    public Double largest() {
+        Double max = arrayList.get(0).doubleValue();
         for (int i = 0; i < arrayList.size();i++) {
-            if (max.intValue() < arrayList.get(i).intValue()) {
-                max = arrayList.get(i).intValue();
+            if (max.doubleValue() < arrayList.get(i).doubleValue()) {
+                max = arrayList.get(i).doubleValue();
             }
         }
         return max;
     }
 
-    public Integer smallest() {
-        Integer min = arrayList.get(0).intValue();
+    public Double smallest() {
+        Double min = arrayList.get(0).doubleValue();
         for (int i = 0; i < arrayList.size();i++) {
-            if (min.intValue() > arrayList.get(i).intValue()) {
-                min = arrayList.get(i).intValue();
+            if (min.doubleValue() > arrayList.get(i).doubleValue()) {
+                min = arrayList.get(i).doubleValue();
             }
         }
         return min;

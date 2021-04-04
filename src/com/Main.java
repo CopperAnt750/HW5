@@ -3,15 +3,28 @@ package com;
 public class Main {
 
     public static void main(String[] args) {
-        MyList<Integer> ob1 = new MyList<>();
-        ob1.add(-6);
-        ob1.add(22);
-        ob1.add(43);
-        ob1.add(12);
-        ob1.add(3);
+        MyList<Float> ob1 = new MyList<>();
+        ob1.add(8f);
+        ob1.add(22f);
+        ob1.add(43f);
+        ob1.add(12f);
+        ob1.add(3f);
 
         System.out.println(ob1);
         System.out.println(ob1.largest());
         System.out.println(ob1.smallest());
+
+        MyList<Double> ob2 = new MyList<>();
+        ob2.add(-10.0);
+        ob2.add(2.0);
+        ob2.add(56.0);
+        ob2.add(12.8);
+        ob2.add(3.0);
+
+        System.out.println(ob2);
+        System.out.println(ob2.largest());
+        System.out.println(ob2.smallest());
+
+
     }
 }
