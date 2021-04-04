@@ -25,6 +25,17 @@ public class Main {
         System.out.println(ob2.largest());
         System.out.println(ob2.smallest());
 
+        MyList<Integer> ob3 = new MyList<>();
+        ob3.add(-3);
+        ob3.add(0);
+        ob3.add(5);
+
+
+        System.out.println(ob3);
+        System.out.println(ob3.largest());
+        System.out.println(ob3.smallest());
+
+
 
     }
 }

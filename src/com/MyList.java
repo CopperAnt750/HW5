@@ -10,31 +10,33 @@ public class MyList<T extends Number> {
     @Override
     public String toString() {
         return "MyList" +
-                 arrayList;
+                arrayList;
     }
 
     public void add(T elem) {
         arrayList.add(elem);
     }
 
-    public Double largest() {
-        Double max = arrayList.get(0).doubleValue();
-        for (int i = 0; i < arrayList.size();i++) {
-            if (max.doubleValue() < arrayList.get(i).doubleValue()) {
-                max = arrayList.get(i).doubleValue();
-            }
-        }
-        return max;
-    }
-
-    public Double smallest() {
-        Double min = arrayList.get(0).doubleValue();
-        for (int i = 0; i < arrayList.size();i++) {
+    public T smallest() {
+        T min = arrayList.get(0);
+        for (int i = 0; i < arrayList.size(); i++) {
             if (min.doubleValue() > arrayList.get(i).doubleValue()) {
-                min = arrayList.get(i).doubleValue();
+                min = arrayList.get(i);
             }
         }
         return min;
     }
 
+
+    public T largest() {
+        T max = arrayList.get(0);
+        for (int i = 0; i < arrayList.size(); i++) {
+            if (max.doubleValue() < arrayList.get(i).doubleValue()) {
+                max = arrayList.get(i);
+            }
+        }
+        return max;
+    }
 }
+
+
